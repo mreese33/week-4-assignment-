@@ -1,0 +1,17 @@
+Question 1: Why is a stack the right choice for undo/redo?
+A stack is a good choice for an undo and redo system because it follows the Last In, First Out system. 
+This means the last action that was added will be the first one removed. This makes sense because when someone presses undo, 
+they usually want to undo the most recent thing they did. When an action is undone, it gets moved to the redo stack in case the
+user wants to bring that action back. Having two stacks helps keep everything in the correct order.
+
+Question 2: Why is a queue better suited for the help desk?
+A queue works better for a help desk because it follows the First In, First Out system. This means whoever enters the queue 
+first should also be helped first. This is important for a help desk because it keeps the system fair and organized instead of
+helping customers in a random order. The front keeps track of who should be helped next, while the rear keeps track of where a 
+new customer should be added.
+
+Question 3: How do your implementations differ from Python's built-in lists?
+My implementations are different from Python's built-in lists because I had to create the structures myself using Nodes and
+pointers. Python lists already have functions that make it easy to add and remove items. For this assignment, I had to create
+my own functions like push, pop, enqueue, and dequeue. I also had to make sure each Node was connected correctly. Doing it 
+this way helped me understand more about what is actually happening when data is added or removed from a stack or queue.
